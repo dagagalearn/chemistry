@@ -1,0 +1,195 @@
+    /* general styling and header */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body {
+        font-family: Poppins ,Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover{
+        color: #ccc;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+
+    /* hero section of my program */
+.hero {
+background: linear-gradient(to bottom, #1A3C56, #A7FFEB); /* Gradient background */
+color: white;
+padding: 40px 20px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh; /* Full viewport height */
+}
+
+.hero h2 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+.hero p {
+font-size: 1.2rem;
+margin-bottom: 20px;
+max-width: 700px; /* Prevent text from stretching too wide */
+}
+
+.hero button {
+background-color: #00BFAE;
+color: white;
+padding: 15px 30px;
+border: none;
+border-radius: 8px;
+font-size: 1.1rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+background-color: #006F58; /* Darker color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.hero h2 {
+font-size: 2rem; /* Smaller font size for tablets */
+}
+
+.hero p {
+font-size: 1rem; /* Slightly smaller text on mobile */
+}
+
+.hero button {
+font-size: 1rem;
+padding: 12px 25px;
+}
+}
+
+@media (max-width: 480px) {
+.hero {
+padding: 30px 10px;
+height: auto; /* Adjust height on very small screens */
+}
+
+.hero h2 {
+font-size: 1.6rem; /* Smaller font size for mobile */
+}
+
+.hero p {
+font-size: 0.9rem; /* Adjust paragraph size */
+}
+
+.hero button {
+font-size: 1rem;
+padding: 12px 20px;
+}
+}
+
+/* Featured things section */
+
+/* Featured Topics Section */
+.featured-topics {
+text-align: center;
+padding: 40px 20px;
+background-color: #F4F4F4; /* Light background to make the topics stand out */
+}
+
+.featured-topics h3 {
+font-size: 2.5rem;
+margin-bottom: 20px;
+color: #00BFAE; /* Chemistry theme color */
+}
+
+.topic-card {
+display: inline-block;
+background-color: #fff;
+width: calc(33.333% - 40px); /* Three columns with space between */
+margin: 20px;
+padding: 20px;
+text-align: center;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.topic-card:hover {
+transform: translateY(-10px); /* Slight elevation effect on hover */
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+}
+
+.topic-card img {
+width: 100%;
+height: auto;
+max-height: 200px; /* Ensure images are not too large */
+object-fit: cover; /* Keep the aspect ratio of images intact */
+border-radius: 8px;
+}
+
+.topic-card h4 {
+font-size: 1.6rem;
+margin: 15px 0;
+}
+
+.topic-card p {
+font-size: 1rem;
+margin-bottom: 20px;
+}
+
+.topic-card a {
+color: #00BFAE; /* Consistent theme color */
+text-decoration: none;
+font-weight: bold;
+}
+
+.topic-card a:hover {
+color: #006F58; /* Darker color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+.topic-card {
+width: calc(50% - 40px); /* Two columns on medium screens */
+}
+}
+
+@media (max-width: 768px) {
+.topic-card {
+width: 100%; /* Full width for mobile */
+margin: 10px 0; /* Adjust spacing between cards */
+}
+
+.featured-topics h3 {
+font-size: 2rem; /* Smaller header font on mobile */
+}
+}
